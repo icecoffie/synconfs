@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SYNConfs — Tech Conference</title>
+  <meta name="description" content="SYNConfs: Sistem pendaftaran konferensi. UI/UX, Frontend, Cyber Security, dan Digital Marketing." />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&family=Chakra+Petch:wght@500;700&display=swap" rel="stylesheet">
+
+  <link rel="icon" href="icon.png" type="image/png" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- header -->
+  <header class="header">
+  <div class="container nav">
+    <a href="#home" class="brand">SYN<span>Confs</span></a>
+
+    <!-- toogle untuk mobile -->
+    <input id="nav-toggle" type="checkbox" class="nav-toggle" hidden>
+    <label for="nav-toggle" class="burger" aria-label="Toggle navigation" aria-controls="main-menu"></label>
+
+    <nav aria-label="Navigasi utama" id="main-menu" class="nav-menu">
+      <ul class="nav__list">
+        <li><a href="#tracks">Tracks</a></li>
+        <li><a href="#schedule">Schedule</a></li>
+        <li><a href="#speakers">Speakers</a></li>
+        <li><a href="#uk-flag">UK Flag</a></li>
+        <li><a href="#register" class="btn btn--sm">Register</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+
+  <main>
+    <!-- hero -->
+    <section id="home" class="section hero">
+      <div class="container hero__grid">
+        <div class="hero__text">
+          <p class="eyebrow">Tech Conference</p>
+          <h1 class="display">
+            SYN<span class="accent">Confs</span> 2025
+          </h1>
+          <p class="lead">
+          A technology conference covering modern design, engineering, security, and marketing. Join us for hands-on sessions, real-world case studies, and cross-disciplinary networking.
+          </p>
+          <ul class="stats" aria-label="Statistik singkat">
+            <li><strong>4 Tracks</strong><br><span>All About Digital Tech</span></li>
+            <li><strong>30+ Talks</strong><br><span>Workshops & Panel</span></li>
+            <li><strong>1 Ticket</strong><br><span>FREE Access for All</span></li>
+          </ul>
+
+          <div class="cta-row">
+            <a class="btn" href="#register">Regist Now</a>
+            <a class="link" href="assets/synconfs-hero.jpg" target="_blank" rel="noopener">Venue</a>
+          </div>
+        </div>
+
+        <figure class="hero__visual">
+          <img src="assets/home.png" alt="Hero SYNConfs" class="hero-img">
+        </figure>
+    </section>
+
+    <!-- flip card interactive -->
+    <section id="tracks" class="section section--lined">
+      <div class="container">
+        <div class="head">
+          <h2 class="h2">Conference Tracks</h2>
+          <p class="muted">Choose for <strong>Join</strong></p>
+        </div>
+
+        <div class="tracks-grid">
+          <!-- Track 1 -->
+          <article class="flip-card" tabindex="0" aria-label="UI/UX Design Track">
+            <div class="flip-card__inner">
+              <div class="flip-card__face flip-card__face--front">
+                <img src="assets/uiux.png" alt="UI/UX Design" class="card-img">
+                <div class="card-body">
+                  <h3 class="card-title">UI/UX Design</h3>
+                  <p class="card-sub">Wireframing, prototyping, dan usability.</p>
+                </div>
+                <a class="join-btn" href="#register">Join Track</a>
+              </div>
+              <div class="flip-card__face flip-card__face--back">
+                <h3>UI/UX Design</h3>
+                <ul class="bullets">
+                  <li>Design systems & accessibility</li>
+                  <li>Interactive prototyping (Figma)</li>
+                  <li>UX research & testing</li>
+                </ul>
+                <a class="btn btn--ghost" href="#schedule">Join</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Track 2 -->
+          <article class="flip-card" tabindex="0" aria-label="Frontend Engineer Track">
+            <div class="flip-card__inner">
+              <div class="flip-card__face flip-card__face--front">
+                <img src="assets/frontend.jpg" alt="Frontend Engineer" class="card-img">
+                <div class="card-body">
+                  <h3 class="card-title">Frontend Engineer</h3>
+                  <p class="card-sub">React, Tools and Performance</p>
+                </div>
+                <a class="join-btn" href="#register">Join Track</a>
+              </div>
+              <div class="flip-card__face flip-card__face--back">
+                <h3>Frontend Engineer</h3>
+                <ul class="bullets">
+                  <li>Tools Engine and Systems</li>
+                  <li>Developing and Maintaining</li>
+                  <li>Core Web Vitals</li>
+                </ul>
+                <a class="btn btn--ghost" href="#schedule">Join</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Track 3 -->
+          <article class="flip-card" tabindex="0" aria-label="Cyber Security Track">
+            <div class="flip-card__inner">
+              <div class="flip-card__face flip-card__face--front">
+                <img src="assets/cyber.png" alt="Cyber Security" class="card-img">
+                <div class="card-body">
+                  <h3 class="card-title">Cyber Security</h3>
+                  <p class="card-sub">Threat modeling & secure by design.</p>
+                </div>
+                <a class="join-btn" href="#register">Join Track</a>
+              </div>
+              <div class="flip-card__face flip-card__face--back">
+                <h3>Cyber Security</h3>
+                <ul class="bullets">
+                  <li>Secure coding & Bug Hunting</li>
+                  <li>Blue/Red teaming basics</li>
+                  <li>Privacy & compliance</li>
+                </ul>
+                <a class="btn btn--ghost" href="#schedule">Join</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Track 4 -->
+          <article class="flip-card" tabindex="0" aria-label="Digital Marketing Track">
+            <div class="flip-card__inner">
+              <div class="flip-card__face flip-card__face--front">
+                <img src="assets/digmar.jpeg" alt="Digital Marketing" class="card-img">
+                <div class="card-body">
+                  <h3 class="card-title">Digital Marketing</h3>
+                  <p class="card-sub">Growth, SEO, & data-driven content.</p>
+                </div>
+                <a class="join-btn" href="#register">Join Track</a>
+              </div>
+              <div class="flip-card__face flip-card__face--back">
+                <h3>Digital Marketing</h3>
+                <ul class="bullets">
+                  <li>SEO Technique & Ads</li>
+                  <li>Automation & analytics systems</li>
+                  <li>Strong Branding multichannel </li>
+                </ul>
+                <a class="btn btn--ghost" href="#schedule">Join</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- schedules-->
+    <section id="schedule" class="section">
+      <div class="container">
+        <div class="head">
+          <h2 class="h2">Schedule</h2>
+          <p class="muted">Your favorite speaker.</p>
+        </div>
+        <div class="table-wrap">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Time</th>
+                <th>Track</th>
+                <th>Topic</th>
+                <th>Speaks</th>
+                <th>Rooms</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>09:00 — 09:45</td>
+                <td>UI/UX</td>
+                <td>Data-to-Design</td>
+                <td>Malika Shakila</td>
+                <td>Hall Munchen</td>
+              </tr>
+              <tr>
+                <td>10:00 — 10:45</td>
+                <td>Frontend</td>
+                <td>Web App Performance Deep Dive</td>
+                <td>Kala Samudra</td>
+                <td>Hall Penguin</td>
+              </tr>
+              <tr>
+                <td>11:00 — 11:45</td>
+                <td>Cyber Security</td>
+                <td>AI Threats 101: Prompt Injection & Model Abuse</td>
+                <td>Alaska Mada</td>
+                <td>Hall Arctic</td>
+              </tr>
+              <tr>
+                <td>13:30 — 14:15</td>
+                <td>Marketing</td>
+                <td>Programmatic SEO & Topic Authority at Scale</td>
+                <td>Mahika Kohler</td>
+                <td>Hall Ice</td>
+              </tr>
+              <tr>
+                <td>14:30 — 15:30</td>
+                <td>Panel</td>
+                <td>Design x Dev x Sec x Growth</td>
+                <td>All Speakers</td>
+                <td>Main Stage</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- speakers -->
+    <section id="speakers" class="section section--alt">
+      <div class="container">
+        <div class="head">
+          <h2 class="h2">Speakers</h2>
+          <p class="muted">Expert of: design, engineering, security, and marketing.</p>
+        </div>
+        <div class="speakers-grid">
+          <!-- Card Speaker -->
+          <article class="spk">
+            <img src="assets/mona.jpeg" alt="Foto Malika Shakila" class="spk__img" />
+            <div class="spk__body">
+              <h3 class="spk__name">Malika Shakila</h3>
+              <p class="spk__role">UI/UX Design</p>
+            </div>
+          </article>
+          <article class="spk">
+            <img src="assets/mone.jpeg" alt="Foto Kala Samudra" class="spk__img" />
+            <div class="spk__body">
+              <h3 class="spk__name">Kala Samudra</h3>
+              <p class="spk__role">Frontend Engineer</p>
+            </div>
+          </article>
+          <article class="spk">
+            <img src="assets/monu.jpeg" alt="Foto Alaska Mada" class="spk__img" />
+            <div class="spk__body">
+              <h3 class="spk__name">Alaska Mada</h3>
+              <p class="spk__role">Cyber Security</p>
+            </div>
+          </article>
+          <article class="spk">
+            <img src="assets/mono.jpeg" alt="Foto Mahika Kohler" class="spk__img" />
+            <div class="spk__body">
+              <h3 class="spk__name">Mahika Kohler</h3>
+              <p class="spk__role">Digital Marketing</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- uk flag -->
+    <section id="uk-flag" class="section section--lined">
+      <div class="container">
+        <div class="head">
+          <h2 class="h2">UK Flag (Pure CSS)</h2>
+          <p class="muted">Pure CSS use flexbox</p>
+        </div>
+          <div class="flag-uk" role="img" aria-label="Union Jack Flag"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- box model -->
+    <section id="box-model" class="section section--alt">
+      <div class="container">
+        <div class="head">
+          <h2 class="h2">Box Model Showcase</h2>
+          <p class="muted">Demo</p>
+        </div>
+
+        <div class="awards">
+          <a class="tag trophy" href="#" title="Padding + Content Box">Padding & Content Box</a>
+          <a class="tag trophy" href="#" title="Border + Radius">Border & Radius</a>
+          <a class="tag trophy" href="#" title="Margin & Spacing">Margin & Spacing</a>
+          <a class="tag trophy" href="#" title="Outline + Focus Ring">Outline & Focus Ring</a>
+          <a class="tag trophy" href="#" title="Box Shadow Elevation">Shadow Elevation</a>
+          <a class="tag trophy" href="#" title="Responsive Container">Responsive Container</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- register form -->
+    <section id="register" class="section section--alt">
+      <div class="container">
+        <div class="head">
+          <h2 class="h2">Register for SYNConfs</h2>
+          <p class="muted">Form dengan pilihan model <em>pill radio</em> yang rapi seperti inspirasi desain.</p>
+        </div>
+
+        <form class="form grid-form" action="#" method="post" novalidate>
+          <!-- Basic fields -->
+          <div class="field">
+            <label for="fullname">Full Name</label>
+            <input id="fullname" name="fullname" type="text" placeholder="Full Name" required>
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" placeholder="name@email.com" required>
+          </div>
+          <div class="field">
+            <label for="company">Company / Org</label>
+            <input id="company" name="company" type="text" placeholder="Company or organization">
+          </div>
+          <div class="field">
+            <label for="role">Role</label>
+            <select id="role" name="role" required>
+              <option value="">Choose role</option>
+              <option>UI/UX Designer</option>
+              <option>Frontend Engineer</option>
+              <option>Cyber Security</option>
+              <option>Digital Marketing</option>
+              <option>Other</option>
+            </select>
+          </div>
+
+          <!-- radio track -->
+          <div class="field span-2">
+            <label>Preferred Track</label>
+            <div class="choice-group" role="radiogroup" aria-label="Preferred Track">
+              <input class="choice-input" type="radio" id="track-uiux" name="track" value="uiux" required>
+              <label class="choice-pill" for="track-uiux" data-emoji="🫐">UI/UX Design</label>
+
+              <input class="choice-input" type="radio" id="track-frontend" name="track" value="frontend">
+              <label class="choice-pill" for="track-frontend" data-emoji="🍳">Frontend Engineer</label>
+
+              <input class="choice-input" type="radio" id="track-cyber" name="track" value="cybersec">
+              <label class="choice-pill" for="track-cyber" data-emoji="🔮">Cyber Security</label>
+
+              <input class="choice-input" type="radio" id="track-mkt" name="track" value="marketing">
+              <label class="choice-pill" for="track-mkt" data-emoji="🧸">Digital Marketing</label>
+            </div>
+          </div>
+
+          <div class="field span-2">
+            <label>Topic Interest</label>
+            <div class="choice-group choice-group--multi" aria-label="Topic Interest">
+              <input class="choice-input" type="checkbox" id="top-a11y" name="topic" value="a11y">
+              <label class="choice-pill" for="top-a11y" data-emoji="🐧">Data-to-Design</label>
+
+              <input class="choice-input" type="checkbox" id="top-3d" name="topic" value="3d">
+              <label class="choice-pill" for="top-3d" data-emoji="🪽">Web App Performance Deep Dive</label>
+
+              <input class="choice-input" type="checkbox" id="top-owasp" name="topic" value="owasp">
+              <label class="choice-pill" for="top-owasp" data-emoji="🥣">AI Threats 101: Prompt Injection & Model Abuse</label>
+
+              <input class="choice-input" type="checkbox" id="top-seo" name="topic" value="seo">
+              <label class="choice-pill" for="top-seo" data-emoji="🎣">SEO & Topic Authority at Scale</label>
+            </div>
+          </div>
+
+          <!-- notes -->
+          <div class="field span-2">
+            <label for="notes">Notes</label>
+            <textarea id="notes" name="notes" rows="5" placeholder="Anything"></textarea>
+          </div>
+
+          <!-- date and ticket -->
+          <div class="field">
+            <label for="date">Date</label>
+            <input id="date" name="date" type="date" required>
+          </div>
+          <div class="field">
+            <label>Ticket Plan</label>
+            <div class="choice-group" role="radiogroup" aria-label="Ticket Plan">
+              <input class="choice-input" type="radio" id="plan-month" name="plan" value="month" required>
+              <label class="choice-pill choice-pill--lime" for="plan-month" data-emoji="💳">299k / month</label>
+
+              <input class="choice-input" type="radio" id="plan-year" name="plan" value="year">
+              <label class="choice-pill choice-pill--lime" for="plan-year" data-emoji="🏷️">2.499k / year</label>
+            </div>
+          </div>
+
+          <div class="actions span-2">
+            <button type="submit" class="btn btn--full">Submit Registration</button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- footer -->
+  <footer class="footer">
+    <div class="container foot">
+      <p>© 2025 SYNConfs — <a href="https://tech.msync.my.id">Matrix Sync</a></p>
+      <a href="#home" class="to-top" aria-label="Back to top">↑</a>
+    </div>
+  </footer>
+
+  <!-- helper -->
+  <script>
+    document.querySelectorAll('.flip-card').forEach(card => {
+      card.addEventListener('click', () => {
+        card.classList.toggle('is-flipped');
+      });
+      card.addEventListener('keypress', (e) => {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          card.classList.toggle('is-flipped');
+        }
+      });
+    });
+  </script>
+</body>
+</html>
