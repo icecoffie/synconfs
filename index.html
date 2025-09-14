@@ -6,35 +6,35 @@
   <title>SYNConfs — Tech Conference</title>
   <meta name="description" content="SYNConfs: Sistem pendaftaran konferensi. UI/UX, Frontend, Cyber Security, dan Digital Marketing." />
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&family=Chakra+Petch:wght@500;700&display=swap" rel="stylesheet">
-
   <link rel="icon" href="icon.png" type="image/png" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <!-- header -->
+  <!-- Header -->
   <header class="header">
-  <div class="container nav">
-    <a href="#home" class="brand">SYN<span>Confs</span></a>
+    <div class="container nav">
+      <a href="#home" class="brand">SYN<span>Confs</span></a>
 
-    <!-- toogle untuk mobile -->
     <input id="nav-toggle" type="checkbox" class="nav-toggle" hidden>
-    <label for="nav-toggle" class="burger" aria-label="Toggle navigation" aria-controls="main-menu"></label>
+    <label for="nav-toggle" class="burger"></label>
 
-    <nav aria-label="Navigasi utama" id="main-menu" class="nav-menu">
-      <ul class="nav__list">
-        <li><a href="#tracks">Tracks</a></li>
-        <li><a href="#schedule">Schedule</a></li>
-        <li><a href="#speakers">Speakers</a></li>
-        <li><a href="#uk-flag">UK Flag</a></li>
-        <li><a href="#register" class="btn btn--sm">Register</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
+      <nav id="main-menu" class="nav-menu">
+        <ul class="nav__list">
+          <li><a href="#tracks">Tracks</a></li>
+          <li><a href="#schedule">Schedule</a></li>
+          <li><a href="#speakers">Speakers</a></li>
+          <li><a href="#chat">Live Chat</a></li>
+          <li><a href="#register" class="btn btn--sm">Register</a></li>
+          <li><a href="#" class="btn btn--sm" id="open-login">Login</a></li>
+          <li><a href="#" class="btn btn--sm" id="logout-btn" style="display:none;">Logout</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-
+  <!-- Main Content -->
   <main>
-    <!-- hero -->
+    <!-- Hero -->
     <section id="home" class="section hero">
       <div class="container hero__grid">
         <div class="hero__text">
@@ -43,48 +43,47 @@
             SYN<span class="accent">Confs</span> 2025
           </h1>
           <p class="lead">
-          A technology conference covering modern design, engineering, security, and marketing. Join us for hands-on sessions, real-world case studies, and cross-disciplinary networking.
+            A technology conference covering modern design, engineering, security, and marketing.
+            Join us for hands-on sessions, real-world case studies, and cross-disciplinary networking.
           </p>
-          <ul class="stats" aria-label="Statistik singkat">
+          <ul class="stats">
             <li><strong>4 Tracks</strong><br><span>All About Digital Tech</span></li>
             <li><strong>30+ Talks</strong><br><span>Workshops & Panel</span></li>
             <li><strong>1 Ticket</strong><br><span>FREE Access for All</span></li>
           </ul>
-
           <div class="cta-row">
             <a class="btn" href="#register">Regist Now</a>
-            <a class="link" href="assets/synconfs-hero.jpg" target="_blank" rel="noopener">Venue</a>
+            <a class="link" href="assets/synconfs-hero.jpg" target="_blank">Venue</a>
           </div>
         </div>
-
         <figure class="hero__visual">
-          <img src="assets/home.png" alt="Hero SYNConfs" class="hero-img">
+          <img src="assets/home1.png" alt="Hero SYNConfs" class="hero-img">
         </figure>
+      </div>
     </section>
 
-    <!-- flip card interactive -->
+    <!-- Tracks (Flip Cards) -->
     <section id="tracks" class="section section--lined">
       <div class="container">
         <div class="head">
           <h2 class="h2">Conference Tracks</h2>
           <p class="muted">Choose for <strong>Join</strong></p>
         </div>
-
         <div class="tracks-grid">
-          <!-- Track 1 -->
-          <article class="flip-card" tabindex="0" aria-label="UI/UX Design Track">
+          <!-- UI/UX -->
+          <article class="flip-card">
             <div class="flip-card__inner">
               <div class="flip-card__face flip-card__face--front">
                 <img src="assets/uiux.png" alt="UI/UX Design" class="card-img">
                 <div class="card-body">
                   <h3 class="card-title">UI/UX Design</h3>
-                  <p class="card-sub">Wireframing, prototyping, dan usability.</p>
+                  <p class="card-sub">Wireframing, prototyping, and usability.</p>
                 </div>
                 <a class="join-btn" href="#register">Join Track</a>
               </div>
               <div class="flip-card__face flip-card__face--back">
                 <h3>UI/UX Design</h3>
-                <ul class="bullets">
+                <ul>
                   <li>Design systems & accessibility</li>
                   <li>Interactive prototyping (Figma)</li>
                   <li>UX research & testing</li>
@@ -94,22 +93,22 @@
             </div>
           </article>
 
-          <!-- Track 2 -->
-          <article class="flip-card" tabindex="0" aria-label="Frontend Engineer Track">
+          <!-- Frontend -->
+          <article class="flip-card">
             <div class="flip-card__inner">
               <div class="flip-card__face flip-card__face--front">
-                <img src="assets/frontend.jpg" alt="Frontend Engineer" class="card-img">
+                <img src="assets/fr.jpg" alt="Frontend Engineer" class="card-img">
                 <div class="card-body">
                   <h3 class="card-title">Frontend Engineer</h3>
-                  <p class="card-sub">React, Tools and Performance</p>
+                  <p class="card-sub">React, tools, and performance.</p>
                 </div>
                 <a class="join-btn" href="#register">Join Track</a>
               </div>
               <div class="flip-card__face flip-card__face--back">
                 <h3>Frontend Engineer</h3>
-                <ul class="bullets">
-                  <li>Tools Engine and Systems</li>
-                  <li>Developing and Maintaining</li>
+                <ul>
+                  <li>Tools & systems</li>
+                  <li>Developing and maintaining</li>
                   <li>Core Web Vitals</li>
                 </ul>
                 <a class="btn btn--ghost" href="#schedule">Join</a>
@@ -117,8 +116,8 @@
             </div>
           </article>
 
-          <!-- Track 3 -->
-          <article class="flip-card" tabindex="0" aria-label="Cyber Security Track">
+          <!-- Cyber Security -->
+          <article class="flip-card">
             <div class="flip-card__inner">
               <div class="flip-card__face flip-card__face--front">
                 <img src="assets/cyber.png" alt="Cyber Security" class="card-img">
@@ -130,7 +129,7 @@
               </div>
               <div class="flip-card__face flip-card__face--back">
                 <h3>Cyber Security</h3>
-                <ul class="bullets">
+                <ul>
                   <li>Secure coding & Bug Hunting</li>
                   <li>Blue/Red teaming basics</li>
                   <li>Privacy & compliance</li>
@@ -140,11 +139,11 @@
             </div>
           </article>
 
-          <!-- Track 4 -->
-          <article class="flip-card" tabindex="0" aria-label="Digital Marketing Track">
+          <!-- Digital Marketing -->
+          <article class="flip-card">
             <div class="flip-card__inner">
               <div class="flip-card__face flip-card__face--front">
-                <img src="assets/digmar.jpeg" alt="Digital Marketing" class="card-img">
+                <img src="assets/digmar.png" alt="Digital Marketing" class="card-img">
                 <div class="card-body">
                   <h3 class="card-title">Digital Marketing</h3>
                   <p class="card-sub">Growth, SEO, & data-driven content.</p>
@@ -153,10 +152,10 @@
               </div>
               <div class="flip-card__face flip-card__face--back">
                 <h3>Digital Marketing</h3>
-                <ul class="bullets">
-                  <li>SEO Technique & Ads</li>
+                <ul>
+                  <li>SEO techniques & Ads</li>
                   <li>Automation & analytics systems</li>
-                  <li>Strong Branding multichannel </li>
+                  <li>Strong multichannel branding</li>
                 </ul>
                 <a class="btn btn--ghost" href="#schedule">Join</a>
               </div>
@@ -166,7 +165,7 @@
       </div>
     </section>
 
-    <!-- schedules-->
+<!-- schedules-->
     <section id="schedule" class="section">
       <div class="container">
         <div class="head">
@@ -267,38 +266,26 @@
       </div>
     </section>
 
-    <!-- uk flag -->
-    <section id="uk-flag" class="section section--lined">
-      <div class="container">
-        <div class="head">
-          <h2 class="h2">UK Flag (Pure CSS)</h2>
-          <p class="muted">Pure CSS use flexbox</p>
-        </div>
-          <div class="flag-uk" role="img" aria-label="Union Jack Flag"></div>
-        </div>
+    <!-- Live Chat -->
+     <section id="chat" class="section section--lined">
+  <div class="container">
+    <div class="head">
+      <h2 class="h2">Live Chat</h2>
+    </div>
+
+    <div class="chat-wrapper">
+      <div id="chat-box" class="chat-box"></div>
+      <div id="typing-preview" class="typing-preview"></div> 
+      <div class="chat-input-area">
+        <input type="text" id="chat-input" placeholder="Type a message..." />
+        <button id="send-btn">Send</button>
       </div>
-    </section>
+    </div>
+  </div>
+</section>
 
-    <!-- box model -->
-    <section id="box-model" class="section section--alt">
-      <div class="container">
-        <div class="head">
-          <h2 class="h2">Box Model Showcase</h2>
-          <p class="muted">Demo</p>
-        </div>
-
-        <div class="awards">
-          <a class="tag trophy" href="#" title="Padding + Content Box">Padding & Content Box</a>
-          <a class="tag trophy" href="#" title="Border + Radius">Border & Radius</a>
-          <a class="tag trophy" href="#" title="Margin & Spacing">Margin & Spacing</a>
-          <a class="tag trophy" href="#" title="Outline + Focus Ring">Outline & Focus Ring</a>
-          <a class="tag trophy" href="#" title="Box Shadow Elevation">Shadow Elevation</a>
-          <a class="tag trophy" href="#" title="Responsive Container">Responsive Container</a>
-        </div>
-      </div>
-    </section>
-
-    <!-- register form -->
+    
+ <!-- register form -->
     <section id="register" class="section section--alt">
       <div class="container">
         <div class="head">
@@ -396,27 +383,46 @@
     </section>
   </main>
 
-  <!-- footer -->
-  <footer class="footer">
+  <!-- Footer -->
+  <footer class="footer" id="footer">
     <div class="container foot">
-      <p>© 2025 SYNConfs — <a href="https://tech.msync.my.id">Matrix Sync</a></p>
-      <a href="#home" class="to-top" aria-label="Back to top">↑</a>
+      <p>© 2025 SYNConfs — <a href="#">Matrix Sync</a></p>
+      <a href="#home" class="to-top">↑</a>
     </div>
   </footer>
 
-  <!-- helper -->
-  <script>
-    document.querySelectorAll('.flip-card').forEach(card => {
-      card.addEventListener('click', () => {
-        card.classList.toggle('is-flipped');
-      });
-      card.addEventListener('keypress', (e) => {
-        if (e.key === 'Enter' || e.key === ' ') {
-          e.preventDefault();
-          card.classList.toggle('is-flipped');
-        }
-      });
-    });
-  </script>
+  <!-- Login Popup -->
+  <div class="popup" id="login-popup">
+    <div class="page">
+      <button class="close-btn" data-close="login-popup">&times;</button>
+      <h2 class="h2">Login SYNConfs</h2>
+      <form id="login-form">
+        <input type="email" id="login-email" placeholder="Email" required>
+        <input type="password" id="login-password" placeholder="Password" required>
+        <button type="submit" class="btn btn--full">Login</button>
+        <button type="button" id="google-login" class="btn btn--full">Login with Google</button>
+      </form>
+      <p><a href="#" id="open-register">Create an account</a></p>
+    </div>
+  </div>
+
+  <!-- Register Popup -->
+  <div class="popup" id="register-popup">
+    <div class="page">
+      <button class="close-btn" data-close="register-popup">&times;</button>
+      <h2 class="h2">Register SYNConfs</h2>
+      <form id="register-form-auth">
+        <input type="email" id="reg-email" placeholder="Email" required>
+        <input type="password" id="reg-password" placeholder="Password" required>
+        <button type="submit" class="btn btn--full">Register</button>
+      </form>
+      <p><a href="#" id="back-to-login">Back to Login</a></p>
+    </div>
+  </div>
+  
+
+  <!-- Scripts -->
+  <script type="module" src="app.js"></script>
+  <a href="#footer" class="to-bottom">↓</a>
 </body>
 </html>
