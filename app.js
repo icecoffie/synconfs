@@ -112,6 +112,7 @@ function openPopup(id, messageText = null) {
   );
   if (!el) return;
 
+  // Jika minta update pesan dan ada <p>, set text-nya
   if (messageText) {
     const p = el.querySelector('p');
     if (p) p.textContent = messageText;
